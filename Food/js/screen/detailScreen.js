@@ -8,7 +8,7 @@ class DetailScreen extends BaseComponent{
 
     render(){
         this._shadowRoot.innerHTML = /*html*/ `
-        <div class="main">
+        <div class="main" style='background: -webkit-linear-gradient(left, #E6D72A, #F18D93);'>
             <food-detail></food-detail>
         </div>
         `

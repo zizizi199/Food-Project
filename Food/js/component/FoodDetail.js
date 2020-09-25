@@ -1,16 +1,20 @@
 import {BaseComponent} from '../BaseComponent.js';
 const style =/*html*/ `
     <style>
-        .{
+        *{
             margin: 0;
             padding: 0;
-            font-family: tahoma, arial, sans-serif, "lucida grande";
+            font-family: 'Lato', sans-serif;
+            background: white;
         }
+    
         .container{
-            max-width: 1000px;
+            padding-top:10px;
+            max-width: 1010px;
             margin: 0 auto;
         }
         .video-material{
+            width:1000px;
             max-height:600px;
             display: grid;
             grid-template-columns: 60% 40%;
@@ -33,6 +37,10 @@ const style =/*html*/ `
         }
         .th2{
             text-align: right;
+        }
+
+        .recipe{
+            width:1010px;
         }
         
     </style>
@@ -100,13 +108,14 @@ class FoodDetail extends BaseComponent {
                     </table>
 
                 </div>
+                
             </div>
             <div class="recipe">
-            <h3>Hướng dẫn thực hiện</h3> <br>
-            1.200gr tôm bóc vỏ, rửa sạch, cắt riêng phần đuôi, băm nhuyễn phần thịt. 50gr củ sen băm nhuyễn, 20gr hành lá cắt nhỏ. Cho tất cả nguyên liệu đã băm nhuyễn vào tô cùng 100gr giò sống, thêm 1/2 muỗng cà phê đường, 1 muỗng cà phê hạt nêm, 1/2 muỗng cà phê tiêu, 1/2 muỗng cà phê ớt bột, 1 muỗng cà phê dầu hào và cuối cùng là 20gr bột bắp. Trộn đều lên và để ướp khoảng 15 phút. <br>
-            2.Tiếp đến, dùng bao tay nilong, thoa một chút dầu ăn lên bao tay rồi vo và nặn viên tôm thành viên tròn. Để lên 1 cái đĩa có thoa 1 chút dầu ăn. Nhúng viên tôm qua bột chiên giòn, đến trứng gà, và cuối cùng là bột chiên xù. Phần đuôi tôm cắm vào viên tôm cho đẹp. <br>
-            3.Cho dầu vào chảo, thử dầu nóng già thì cho viên tôm vào. Để lửa vừa, chiên đều tôm cho vàng đều là được. <br>
-            4.Cho tôm viên ra đĩa, ăn cùng tương ớt Chin-Su rất ngon. Chỉ với chút biến tấu bạn đã có món tôm viên củ sen hấp dẫn, giòn ngon cho cả nhà rồi. <br>
+                <h3 style="text-align: center">Hướng dẫn thực hiện</h3> <br>
+                Bước 1. <br>  200gr tôm bóc vỏ, rửa sạch, cắt riêng phần đuôi, băm nhuyễn phần thịt. 50gr củ sen băm nhuyễn, 20gr hành lá cắt nhỏ. Cho tất cả nguyên liệu đã băm nhuyễn vào tô cùng 100gr giò sống, thêm 1/2 muỗng cà phê đường, 1 muỗng cà phê hạt nêm, 1/2 muỗng cà phê tiêu, 1/2 muỗng cà phê ớt bột, 1 muỗng cà phê dầu hào và cuối cùng là 20gr bột bắp. Trộn đều lên và để ướp khoảng 15 phút. <br>
+                Bước 2. <br>  Tiếp đến, dùng bao tay nilong, thoa một chút dầu ăn lên bao tay rồi vo và nặn viên tôm thành viên tròn. Để lên 1 cái đĩa có thoa 1 chút dầu ăn. Nhúng viên tôm qua bột chiên giòn, đến trứng gà, và cuối cùng là bột chiên xù. Phần đuôi tôm cắm vào viên tôm cho đẹp. <br>
+                Bước 3. <br>  Cho dầu vào chảo, thử dầu nóng già thì cho viên tôm vào. Để lửa vừa, chiên đều tôm cho vàng đều là được. <br>
+                Bước 4. <br>  Cho tôm viên ra đĩa, ăn cùng tương ớt Chin-Su rất ngon. Chỉ với chút biến tấu bạn đã có món tôm viên củ sen hấp dẫn, giòn ngon cho cả nhà rồi. <br>
             </div>
         </div>
         `;
